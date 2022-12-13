@@ -1,6 +1,7 @@
+# --- Day 1: Calorie Counting - --
+
 with open('input.txt') as f:
     lines = f.read().strip().split("\n")
-
 
 calories = 0
 totalCals = []

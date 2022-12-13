@@ -1,8 +1,11 @@
+# --- Day 2: Rock Paper Scissors ---
+
 #Loads in input-file and iterates through it
 with open('input.txt') as f:
     rounds = [i for i in f.read().strip().split("\n")]
 
-#Possible outcomes p1
+# --- Part One ---
+#Possible outcomes
 
 # A vs X = DRAW = 1 + 3 = 4
 # A vs Y = WIN  = 2 + 6 = 8
@@ -28,6 +31,8 @@ for round in rounds:
     totalScore += results[round]
 
 print(totalScore)
+
+# --- Part Two ---
 
 # In the second part the ruleset is changed as seen below
 # Therefore we change the scoreset of the dictionary and run it through the same way as above

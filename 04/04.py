@@ -1,8 +1,10 @@
+# --- Day 4: Camp Cleanup ---
+
 with open('input.txt') as f:
     data = [i for i in f.read().strip().split("\n")]
 
 
-#Part 1
+# --- Part One ---
 
 pairs = 0
 for i in data:
@@ -17,7 +19,8 @@ for i in data:
     elif second[0] <= first[0] and second[1] >= first[1]:
         pairs +=1
 
-# Part 2
+# --- Part Two ---
+
 pairs = 0
 for i in data:
     first, second = i.split(",")
